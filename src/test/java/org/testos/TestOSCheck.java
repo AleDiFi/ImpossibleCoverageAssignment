@@ -1,4 +1,4 @@
-package testOs;
+package org.testos;
 
 import com.example.impossiblecoverageassignment.OSCheck;
 import org.junit.jupiter.api.Test;
