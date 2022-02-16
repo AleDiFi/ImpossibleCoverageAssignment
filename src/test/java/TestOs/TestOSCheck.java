@@ -8,10 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestOSCheck {
 
     @Test
-    public void TestCheckOsSpecifics(){
-        OSCheck TestOSName = new OSCheck();
-        String os_name = TestOSName.getOSName();
-        String output = TestOSName.checkOsSpecifics(os_name);
+    public void testCheckOsSpecifics(){
+        OSCheck testOSName = new OSCheck();
+        String os_name = testOSName.getOSName();
+        String output = testOSName.checkOsSpecifics(os_name);
         assertEquals((String) "Il sistema operativo è Windows 10", output);
     }
 }
