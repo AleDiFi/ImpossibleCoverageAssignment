@@ -6,19 +6,17 @@ public class OSCheck {
 
     public static void main(String[] args){
         OSCheck oSName = new OSCheck();
-        String os_name = oSName.getOSName();
-        System.out.println(oSName.getOSName());
-        oSName.checkOsSpecifics(os_name);
+        String osN = oSName.getOSName();
+        oSName.checkOsSpecifics(osN);
     }
 
     public String getOSName(){
-        String os_name = System.getProperty("os.name");
-        return os_name;
+        return System.getProperty("os.name");
     }
 
-    public String checkOsSpecifics(String os_name){
+    public String checkOsSpecifics(String osName){
         String alertMessage = null;
-        if(Objects.equals(os_name, "Windows 10")){
+        if(Objects.equals(osName, "Windows 10")){
             alertMessage = "Il sistema operativo è Windows 10";
         } else{
             alertMessage = "Il sistema operativo non è Windows 10";
